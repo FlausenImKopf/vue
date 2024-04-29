@@ -1,5 +1,5 @@
 # Web Apps with Vue.js
-Coding Tasks for learning Vue.js within the bootcamp curriculum.
+Coding tasks for learning Vue.js within the bootcamp curriculum.
 
 ## Part 1: Vue Basics
 
