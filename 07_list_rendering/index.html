@@ -25,7 +25,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th v-for="(key) of Object.keys(books[0])">{{key}}</th>
+                        <th v-for="(key) of Object.keys(books[0])" :key="key">{{key}}</th>
                         <!-- <th>isbn</th>
                         <th>author</th>
                         <th>publisher</th>
@@ -34,7 +34,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(book) in books">
+                    <tr v-for="(book) in books" :key="book.isbn">
                         <td v-for="(value, index) of book">{{value}}</td>
                         <!-- <td>9781491912553</td>
                         <td>Maximiliano Firtman</td>
