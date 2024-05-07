@@ -28,9 +28,9 @@
             </div>
             <h1>Task 2</h1>
             <ul class="fruit-basket">
-                <li v-for="fruit in fruitBasket" :key="fruit" class="fruit-basket--item">
+                <li v-for="(fruit, index) in fruitBasket" :key="fruit" class="fruit-basket--item">
                     <span>{{ fruit }}</span>
-                    <button>Remove</button>
+                    <button @click="removeFruit(index)">Remove</button>
                 </li>
             </ul>
         </div>

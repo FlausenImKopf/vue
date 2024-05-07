@@ -19,5 +19,8 @@ Vue.createApp({
       this.x = event.offsetX;
       this.y = event.offsetY;
     },
+    removeFruit(index) {
+      this.fruitBasket.splice(index, 1);
+    },
   },
 }).mount("#app");
