@@ -14,4 +14,10 @@ Vue.createApp({
       ],
     };
   },
+  methods: {
+    newCoordinates(event) {
+      this.x = event.offsetX;
+      this.y = event.offsetY;
+    },
+  },
 }).mount("#app");
