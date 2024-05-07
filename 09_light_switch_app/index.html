@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Good Morning</title>
+    <script defer src="https://unpkg.com/vue@latest"></script>
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <button id="lumos">Toggle Light</button>
+    <div id="app">
+        <button @click="active" id="lumos">Toggle Light</button>
+    </div>
 </body>
 
 </html>
