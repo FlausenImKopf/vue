@@ -1,35 +1,11 @@
-# first_steps_with_vue_vite
+# First tasks with vue vite: 
+1. ## Task: Add a reset.css file
 
-This template should help get you started developing with Vue 3 in Vite.
+We need to normalize some styling
 
-## Recommended IDE Setup
+- [ ] Remove all styles from existing files.
+- [ ] Add the `src/reset.css` css styles to the application
+- [ ] Use one of the techniques you learned before
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## Sample Solution
+https://codesandbox.io/s/condescending-agnesi-chd28
