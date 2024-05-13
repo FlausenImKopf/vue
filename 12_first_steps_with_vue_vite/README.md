@@ -33,7 +33,7 @@ In this task we will practice the handling with single file components in Vue CL
 
 https://codesandbox.io/s/blazing-silence-5suyo
 
-## 3. Create a BookListRow and BaseButton Component
+## 3.Task: Create a BookListRow and BaseButton Component
 
 In this task we will slice our BookList component into smaller chunks.
 
