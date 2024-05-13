@@ -4,9 +4,10 @@
 </template>
 
 <!-- Alternative to importing reset.css in main.js: -->
-<!-- <style>
+<style>
 @import url('./assets/reset.css');
-</style> -->
+@import url('./assets/global.css');
+</style>
 
 <script>
 import TheHeader from '@/components/TheHeader.vue'
