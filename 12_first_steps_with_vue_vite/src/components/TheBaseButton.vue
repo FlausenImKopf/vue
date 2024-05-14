@@ -1,5 +1,5 @@
 <template>
-  <button :class="styling">{{ text }}</button>
+  <button @click="$emit('bookmarkChanged')" :class="styling">{{ text }}</button>
 </template>
 
 <script>

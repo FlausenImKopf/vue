@@ -1,4 +1,4 @@
-# First tasks with vue vite:
+# First Steps with vue vite: Bookmonkey
 
 ## 1. Task: Add a reset.css file
 
@@ -12,7 +12,7 @@ We need to normalize some styling
 
 https://codesandbox.io/s/condescending-agnesi-chd28
 
-## 2.Task: Header & Booklist Component
+# 2.Task: Header & Booklist Component
 
 In this task we will practice the handling with single file components in Vue CLI projects.
 
@@ -33,7 +33,7 @@ In this task we will practice the handling with single file components in Vue CL
 
 https://codesandbox.io/s/blazing-silence-5suyo
 
-## 3.Task: Create a BookListRow and BaseButton Component
+# 3.Task: Create a BookListRow and BaseButton Component
 
 In this task we will slice our BookList component into smaller chunks.
 
@@ -62,3 +62,19 @@ In this task we will slice our BookList component into smaller chunks.
 ## Sample Solution
 
 https://codesandbox.io/s/gallant-merkle-n2mk81
+
+# 4. Task: Use custom events
+
+In this task we will use custom events to modify parent state.
+
+## Solve the following tasks:
+
+- [ ] Add a custom event when the `Add Bookmark` button was clicked.
+- [ ] Add `isBookmarked` with a value `true` when the `Add Bookmark` button was clicked.
+- [ ] When a book has a `isBookmarked` property that is `true`, display the text remove button.
+  - [ ] Otherwise show `Add Bookmark` as button text.
+- [ ] Implement that the `isBookmarked` state of each book could be changed between true and false.
+
+## Sample Solution
+
+https://codesandbox.io/s/github/coding-bootcamps-eu/vuejs-tech-bookstore/tree/task/06-use-custom-events

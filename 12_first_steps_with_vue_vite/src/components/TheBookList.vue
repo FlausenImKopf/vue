@@ -9,7 +9,14 @@
           <th class=".table-item__table-head--actions">Action</th>
         </tr>
       </thead>
-      <the-book-row v-for="book in books" :book="book" class="table-item__table-row" />
+      <the-book-row
+        v-for="book in books"
+        :button-text="changeButtonText(book)"
+        @bookmarkChanged="changeBookmarkState(book)"
+        :book="book"
+        :key="'id-' + book.isbn"
+        class="table-item__table-row"
+      />
     </table>
   </section>
 </template>
@@ -28,7 +35,8 @@ export default {
           author: 'Shing Lyu',
           publisher: 'Apress',
           price: '$28.75',
-          numPages: 256
+          numPages: 256,
+          isBookmarked: false
         },
         {
           title: 'Using WebPagetest',
@@ -36,7 +44,8 @@ export default {
           author: 'Rick Viscomi, Andy Davies, Marcel Duran',
           publisher: "O'Reilly Media",
           price: '$25.80',
-          numPages: 214
+          numPages: 214,
+          isBookmarked: false
         },
         {
           title: 'Web Scraping with Python',
@@ -44,7 +53,8 @@ export default {
           author: 'Ryan Mitchell',
           publisher: "O'Reilly Media",
           price: '$14.00',
-          numPages: 256
+          numPages: 256,
+          isBookmarked: false
         },
         {
           title: 'High Performance Mobile Web',
@@ -52,9 +62,18 @@ export default {
           author: 'Maximiliano Firtman',
           publisher: "O'Reilly Media",
           price: '$7.00',
-          numPages: 326
+          numPages: 326,
+          isBookmarked: false
         }
       ]
+    }
+  },
+  methods: {
+    changeBookmarkState(book) {
+      return (book.isBookmarked = !book.isBookmarked)
+    },
+    changeButtonText(book) {
+      return book.isBookmarked ? 'Remove Bookmark' : 'Add Bookmark'
     }
   }
 }

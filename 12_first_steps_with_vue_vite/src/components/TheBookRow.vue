@@ -3,7 +3,9 @@
     <tr class="table-item__table-row">
       <td>{{ book.title }}</td>
       <td>{{ book.isbn }}</td>
-      <td><TheBaseButton variant="secondary" text="Click me" /></td>
+      <td>
+        <TheBaseButton @bookmarkChanged="sendOn" variant="secondary" :text="buttonText" />
+      </td>
     </tr>
   </tbody>
 </template>
@@ -12,7 +14,12 @@
 import TheBaseButton from '@/components/TheBaseButton.vue'
 export default {
   components: { TheBaseButton },
-  props: ['book']
+  props: ['book', 'buttonText'],
+  methods: {
+    sendOn() {
+      this.$emit('bookmarkChanged')
+    }
+  }
 }
 </script>
 
