@@ -5,10 +5,6 @@
 
 ## Part 1: Vue Basics with Vue CDN
 
-### Slides
-
-[Google Presenation Slides for Part 1](https://docs.google.com/presentation/d/16fXnSNeVMWUvHmv24SwoO4rKDG_1dWUem4UJ7UKVduw/edit#slide=id.gd1c16f7fa1_1_28)
-
 ### Tasks
 
 - 01 From static HTML to a Vue Instance
