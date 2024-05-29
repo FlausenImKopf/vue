@@ -1,5 +1,7 @@
 # Web Apps with Vue.js
-Coding tasks for learning Vue.js within the bootcamp curriculum.
+
+> Created during my time [@CodingBootcampsEurope](https://github.com/coding-bootcamps-eu).
+> This repo was just for learning purposes and is not cleaned up. 
 
 ## Part 1: Vue Basics with Vue CDN
 
